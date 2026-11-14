@@ -8,13 +8,28 @@
       ],
       "@/assets/*": [
         "./assets/*"
+      ],
+      "@minik/design-tokens": [
+        "./src/packages/design-tokens/index.ts"
       ]
-    }
+    },
+    "types": [
+      "jest"
+    ],
+    "noUncheckedIndexedAccess": true
   },
   "include": [
     "**/*.ts",
     "**/*.tsx",
     ".expo/types/**/*.ts",
     "expo-env.d.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "babel.config.js",
+    "metro.config.js",
+    "jest.config.js",
+    "android",
+    "ios"
   ]
 }
